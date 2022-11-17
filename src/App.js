@@ -200,25 +200,11 @@ class App extends Component {
           <section className="section-slider col-16 pad-col-11 desk-col-12">
             <SwiperWrapper>
               <SwiperSlide
-                name="WeDrinkin'"
-                slide="wedrinkin"
-                responsibilities="Development | Design | iOS | PhoneGap"
-                img="assets/media/img/work/wedrinkin.png"
-                link="https://appsto.re/us/SdCL4.i"
-                linkName="Download App"/>
-              <SwiperSlide
                 name="Omnigage"
                 slide="omnigage"
                 responsibilities="Development | EmberJS | Application"
                 img="assets/media/img/work/omnigage.png"
                 link="https://omnigage.com/"
-                linkName="Visit Site"/>
-              <SwiperSlide
-                name="Ivanhoe Brewing Co"
-                slide="ivanhoe"
-                responsibilities="Development | Wordpress | Frontend | Backend"
-                img="assets/media/img/work/ivanhoe.png"
-                link="https://ivanhoeparkbrewing.com/"
                 linkName="Visit Site"/>
               <SwiperSlide
                 name="Meyers Research"
@@ -270,11 +256,6 @@ class App extends Component {
                 link="https://www.facebook.com/mamassauce/photos/a.379061322209.157805.360217092209/10151652833417210"
                 linkName="See More"/>
               <SwiperSlide
-                name="Event Poster"
-                slide="poster"
-                responsibilities="Design | Screenprint"
-                img="assets/media/img/work/poster.png"/>
-              <SwiperSlide
                 name="RMCAD | The Dome"
                 slide="dome"
                 responsibilities="Development | Drupal | Frontend | Backend"
@@ -291,13 +272,6 @@ class App extends Component {
                 slide="fhfc"
                 responsibilities="Design | Development | Web App | Frontend | Backend"
                 img="assets/media/img/work/fhfcdirectory.png"/>
-              <SwiperSlide
-                name="gitcommit-m | Sideproject"
-                slide="gitcommit"
-                responsibilities="Design | Development | Web App | Frontend | Backend"
-                img="assets/media/img/work/gitcommit.png"
-                link="http://gitcommit-m.com"
-                linkName="Visit Site"/>
             </SwiperWrapper>
           </section>
         </div>
