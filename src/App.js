@@ -31,6 +31,7 @@ class App extends Component {
               <div className="col-16 pad-col-5 desk-col-4 ac">
                 <div className="top-img">
                   <FlickrSlider />
+                  {/* <img src="assets/media/img/orlando-class.jpeg" alt="me" /> */}
                 </div>
                 <figure className="circle  col-5 pad-col-2 desk-col-1 ci">
                   <img src="assets/media/img/me.jpg" alt="me" />
