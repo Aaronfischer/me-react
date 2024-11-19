@@ -15,402 +15,402 @@
 @import "./_helpers.scss";
 @import "./_plugin.scss";
 
-
-
-
-body{
-    background:white;
-    >.container{
-        overflow-x:hidden;
-        overflow-y: scroll; /* has to be scroll, not auto */
-        -webkit-overflow-scrolling: touch;
-    }
+body {
+  background: white;
+  > .container {
+    overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+  }
 }
-.fh{
-    height:100%;
+.fh {
+  height: 100%;
 }
 // .row{
 //     height:100%;
 // }
-section{
-    position:relative;
-    height:100%;
+section {
+  position: relative;
+  height: 100%;
 }
-aside{
-    position:relative;
-    height:auto;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    overflow-y:auto;
-    overflow-x:hidden;
-    background-color:$offwhite;
-    color:$prplDark;
-    z-index:2;
-    box-shadow: 5px 0px 50px rgba(0, 0, 0, 0.04);
-    @include breakpoint(pad){
-        position:absolute;
-        height:100%;
-    }
-    .row &.fw{
-        padding-left:0;
-        padding-right:0;
-    }
+aside {
+  position: relative;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: $offwhite;
+  color: $prplDark;
+  z-index: 2;
+  box-shadow: 5px 0px 50px rgba(0, 0, 0, 0.04);
+  @include breakpoint(pad) {
+    position: absolute;
+    height: 100%;
+  }
+  .row &.fw {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-.section-about-me{
-    position:fixed;
-    top:0;
-    left:-100%;
-    overflow:hidden;
-    transition: left 0.3s ease;
-    width:100%;
-    background-color:$offwhite;
-    height:100%;
-    z-index:2;
+.section-about-me {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  overflow: hidden;
+  transition: left 0.3s ease;
+  width: 100%;
+  background-color: $offwhite;
+  height: 100%;
+  z-index: 2;
+  @include breakpoint(pad) {
+    z-index: 1;
+    width: calc(90% - 31.25%);
+  }
+  @include breakpoint(desk) {
+    width: calc(90% - 25%);
+  }
+  &.active {
+    left: 0;
     @include breakpoint(pad) {
-        z-index:1;
-        width: calc(90% - 31.25%);
+      left: 31.25%;
     }
     @include breakpoint(desk) {
-        width: calc(90% - 25%);
+      left: 25%;
     }
-    &.active{
-        left:0;
-        @include breakpoint(pad) {
-            left: 31.25%;
-        }
-        @include breakpoint(desk) {
-            left: 25%;
-        }
+  }
+  .h1 {
+    font-size: 1.75em;
+    line-height: 1.5em;
+    @include breakpoint(desk) {
+      font-size: 2.25em;
+      line-height: 1.5em;
     }
-    .h1{
-        font-size:1.75em;
-        line-height:1.5em;
-        @include breakpoint(desk) {
-            font-size:2.25em;
-            line-height:1.5em;
-        }
-        @include breakpoint(desk-max) {
-            font-size:2.5em;
-            line-height:1.5em;
-        }
+    @include breakpoint(desk-max) {
+      font-size: 2.5em;
+      line-height: 1.5em;
     }
+  }
 }
-.section-slider{
-    position:relative;
-    z-index:0;
+.section-slider {
+  position: relative;
+  z-index: 0;
 }
-section{
-    .row &.fw{
-        padding-left:0;
-        padding-right:0;
-    }
+section {
+  .row &.fw {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.top-img{
-    position:relative;
-    height:auto;
-    padding-bottom:66.25%;
-    .swiper-container{
-        position:absolute;
-        width:100%;
-    }
+.top-img {
+  position: relative;
+  height: auto;
+  // TOOO: hide
+  padding-bottom: 66.25%;
+  .swiper-container {
+    position: absolute;
+    width: 100%;
+  }
 }
 
-.pad-vertical-align{
+.pad-vertical-align {
+  @include breakpoint(pad) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.vcard {
+  // color:white;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-shadow: 0 1px 1px rgba(white, 0.05);
+  }
+  h1 {
+    margin-top: -10%;
+    margin-bottom: 0;
+  }
+  .h5 {
+    font-size: 0.75em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-me {
+    padding: 5%;
+    h3 {
+      // margin-top:0;
+      margin-bottom: 0.5em;
+    }
+    div {
+      font-size: 0.8em;
+    }
+  }
+  .social {
+    margin-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 340px;
+    width: 320px;
     @include breakpoint(pad) {
-        position:relative;
-        top:50%;
-        transform:translateY(-50%);
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 300px;
     }
+  }
 }
 
-
-.vcard{
-    // color:white;
-    h1,h2,h3,h4,h5,h6{
-        text-shadow:0 1px 1px rgba(white,0.05);
+.social {
+  margin-left: auto;
+  margin-right: auto;
+  li {
+    position: relative;
+    display: inline-block;
+    i {
+      font-size: 1.5em;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
-    h1{
-        margin-top:-10%;
-        margin-bottom:0;
+    span {
+      font-size: 0.9em;
     }
-    .h5{
-        font-size:0.75em;
-        padding-left:10px;
-        padding-right:10px;
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 20px 30px;
+      transition: color 0.3s ease;
+      &:hover {
+        transition: color 0.3s ease, background-color 0.3s ease;
+        .hoverable {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:active,
+      &:focus {
+        outline: 0;
+      }
+      .hoverable {
+        display: flex;
+        position: absolute;
+        line-height: 1.15em;
+        white-space: nowrap;
+        top: -55%;
+        opacity: 0;
+        visibility: hidden;
+        min-width: 50px;
+        background-color: $specialColor;
+        color: white;
+        padding: 3px 15px;
+        border-radius: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        .count {
+          margin-left: auto;
+          padding-left: 10px;
+        }
+      }
     }
-    .about-me{
-        padding:5%;
-        h3{
-            // margin-top:0;
-            margin-bottom:0.5em;
-        }
-        div{
-            font-size:0.8em;
-        }
-    }
-    .social{
-        margin-top:20%;
-        padding-left:5%;
-        padding-right:5%;
-        max-width:340px;
-        width:320px;
-        @include breakpoint(pad) {
-            position:absolute;
-            bottom:10px;
-            left:50%;
-            transform:translateX(-50%);
-            width:100%;
-            max-width:300px;
-        }
-    }
-}
-
-.social{
-    margin-left:auto;
-    margin-right:auto;
-    li{
-        position:relative;
-        display:inline-block;
-        i{
-            font-size:1.5em;
-            position:absolute;
-            left:50%;
-            top:50%;
-            transform:translate(-50%, -50%)
-        }
-        span{
-            font-size:0.9em;
-        }
-        a{
-            display: inline-block;
-            position: relative;
-            padding: 20px 30px;
-            transition: color 0.3s ease;
-            &:hover{
-                transition:color 0.3s ease, background-color 0.3s ease;
-                .hoverable{
-                    opacity:1;
-                    visibility:visible;
-                }
-            }
-            &:active,
-            &:focus{
-                outline:0;
-            }
-            .hoverable{
-                display:flex;
-                position:absolute;
-                line-height:1.15em;
-                white-space: nowrap;
-                top:-55%;
-                opacity:0;
-                visibility:hidden;
-                min-width:50px;
-                background-color:$specialColor;
-                color:white;
-                padding:3px 15px;
-                border-radius:50px;
-                left:50%;
-                transform:translateX(-50%);
-                .count{
-                    margin-left:auto;
-                    padding-left:10px;
-                }
-            }
-        }
-    }
+  }
 }
 
-.btn-mobile-only{
-    display:inline-block;
-    @include breakpoint(pad) {
-        display:none;
-    }
+.btn-mobile-only {
+  display: inline-block;
+  @include breakpoint(pad) {
+    display: none;
+  }
 }
 
-.bg-white{
-    background-color:white;
- }
-.bg-grey{
-   background-color:rgba(#eee, 0.25);
+.bg-white {
+  background-color: white;
 }
-.padding-top-80{
-    padding-top:80px;
+.bg-grey {
+  background-color: rgba(#eee, 0.25);
 }
-.padding-top-25{
-    padding-top:25px;
+.padding-top-80 {
+  padding-top: 80px;
 }
-.padding-bottom-25{
-    padding-bottom:25px;
+.padding-top-25 {
+  padding-top: 25px;
 }
-
-.margin-top-0{
-    margin-top:0;
-}
-.margin-bottom-50{
-    margin-bottom:50px;
+.padding-bottom-25 {
+  padding-bottom: 25px;
 }
 
-.padding{
-    padding:5%;
+.margin-top-0 {
+  margin-top: 0;
 }
-.padding-2{
-    padding:2%;
+.margin-bottom-50 {
+  margin-bottom: 50px;
 }
-.padding-side-3{
-    padding-left:3%;
-    padding-right:3%;
+
+.padding {
+  padding: 5%;
 }
-.swiper-container{
-height:100%;
+.padding-2 {
+  padding: 2%;
 }
-.swiper-slide{
-    header{
-        background-color:$offwhite;
-        padding-top:1%;
-        padding-bottom:1%;
+.padding-side-3 {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.swiper-container {
+  height: 100%;
+}
+.swiper-slide {
+  header {
+    background-color: $offwhite;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .pos-ab {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    // width:100%;
+  }
+  .btn {
+    @include breakpoint(phone) {
+      float: none;
     }
-    .pos-ab{
-        position:absolute;
-        bottom:0;
-        height:auto;
-        // width:100%;
-    }
-    .btn{
-        @include breakpoint(phone) {
-            float:none;
-        }
-    }
-    .h6{
-        margin-left:10px;
-    }
+  }
+  .h6 {
+    margin-left: 10px;
+  }
 }
 
 .swiper-button-next,
-.swiper-button-prev{
-    background:white !important;
-    color: #000;
-    font-size: 1.1em;
-    display: inline-block;
+.swiper-button-prev {
+  background: white !important;
+  color: #000;
+  font-size: 1.1em;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.1;
+  transition: all ease 0.3s;
+  text-align: center;
+  &:hover {
+    opacity: 1;
+    transition: all ease 0.3s;
+  }
+  &:focus {
+    outline: 0;
+  }
+  i {
     position: absolute;
+    margin-top: 1px;
     top: 50%;
-    height: 45px !important;
-    width:45px !important;
-    border-radius:50%;
-    z-index: 1;
-    opacity: .1;
-    transition:all ease 0.3s;
-    text-align:center;
-    &:hover{
-        opacity:1;
-        transition:all ease 0.3s;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:before {
+      padding: 0;
+      margin: 0;
     }
-    &:focus{
-        outline:0;
-    }
-    i{
-        position:absolute;
-        margin-top:1px;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-        &:before{
-            padding:0;
-            margin:0;
-        }
-    }
+  }
 }
-.swiper-button-prev{
-    i{
-        margin-left:-2px;
-    }
+.swiper-button-prev {
+  i {
+    margin-left: -2px;
+  }
 }
-.swiper-button-next{
-    i{
-        margin-left:1px;
-    }
+.swiper-button-next {
+  i {
+    margin-left: 1px;
+  }
 }
 
-.swiper-slide{
-    .img{
-        height:90%;
-    }
+.swiper-slide {
+  .img {
+    height: 90%;
+  }
 }
 
-
-
-.slide-bacsales{
-    background-position: center center;
-    background-color:#cc3c3a;
+.slide-bacsales {
+  background-position: center center;
+  background-color: #cc3c3a;
 }
-.slide-omnigage{
-    background-position: center center;
-    background-color:#8c4fdd;
+.slide-omnigage {
+  background-position: center center;
+  background-color: #8c4fdd;
 }
-.slide-meyers{
-    background-position: center center;
-    background-color:#1991EB;
+.slide-meyers {
+  background-position: center center;
+  background-color: #1991eb;
 }
-.slide-wedrinkin{
-    background-position: center center;
-    background-color:#31b69f;
+.slide-wedrinkin {
+  background-position: center center;
+  background-color: #31b69f;
 }
-.slide-ivanhoe{
-    background-position: center center;
-    background-color:#aad4ec;
+.slide-ivanhoe {
+  background-position: center center;
+  background-color: #aad4ec;
 }
-.slide-tabular{
-    background-position: center center;
-    background-color:#f1f8ff;
+.slide-tabular {
+  background-position: center center;
+  background-color: #f1f8ff;
 }
-.slide-phil{
-    background-position: center center;
-    background-color:#eee;
+.slide-phil {
+  background-position: center center;
+  background-color: #eee;
 }
-.slide-ahu{
-    background-position: center center;
-    background-color:#002E50;
+.slide-ahu {
+  background-position: center center;
+  background-color: #002e50;
 }
-.slide-mmi{
-    background-position: center center;
-    background-color:rgba($prpl,0.75);
+.slide-mmi {
+  background-position: center center;
+  background-color: rgba($prpl, 0.75);
 }
-.slide-said{
-    background-position: center center;
-    background-color:$grey;
+.slide-said {
+  background-position: center center;
+  background-color: $grey;
 }
-.slide-dome{
-    background-position: center center;
-    background-color:$yellow;
+.slide-dome {
+  background-position: center center;
+  background-color: $yellow;
 }
-.slide-bdg{
-    background-position: center center;
-    background-color:$blue;
+.slide-bdg {
+  background-position: center center;
+  background-color: $blue;
 }
-.slide-fhfc{
-    background-position: center center;
-    background-color:$specialColor;
+.slide-fhfc {
+  background-position: center center;
+  background-color: $specialColor;
 }
-.slide-poster{
-    background-position: center center;
-    background-color:rgba(#eee,1);
+.slide-poster {
+  background-position: center center;
+  background-color: rgba(#eee, 1);
 }
-.slide-branding{
-    background-position:center center;
-    background-color:rgba($slate,0.15);
+.slide-branding {
+  background-position: center center;
+  background-color: rgba($slate, 0.15);
 }
-.slide-wedding{
-    background-position:center center;
-    background-color:$coral;
+.slide-wedding {
+  background-position: center center;
+  background-color: $coral;
 }
-.slide-fns{
-    background-position:center center;
-    background-color:rgba($blue,0.5);
+.slide-fns {
+  background-position: center center;
+  background-color: rgba($blue, 0.5);
 }
-.slide-gitcommit{
-    background-position:center center;
-    background-color:rgba($teal,0.5);
+.slide-gitcommit {
+  background-position: center center;
+  background-color: rgba($teal, 0.5);
 }
