@@ -32,7 +32,8 @@ class App extends Component {
                 <div className="top-img">
                   {/* TODO: swap below */}
                   <FlickrSlider />
-                  {/* <img src="assets/media/img/orlando-class.jpeg" alt="me" /> */}
+                  {/* <img src="assets/media/img/laytart-class.png" alt="me" /> */}
+                  {/* <img src="assets/media/img/orlando-class.png" alt="me" /> */}
                 </div>
                 <figure className="circle  col-5 pad-col-2 desk-col-1 ci">
                   {/* TODO: swap below */}
@@ -112,9 +113,9 @@ class App extends Component {
                 <div className="row cf">
                   <div className="col-14 pad-col-8 desk-col-8 ci">
                     <h3 className="h1 margin-bottom-50">
-                      {/* This is Ms Orlando Class Website of all the things we
+                      {/* This is Mrs Laytart's Class Website of all the things we
                       love. */}
-                      I am a Senior Front-End Engineer,{" "}
+                      {/* REMOVE BELOW */}I am a Senior Front-End Engineer,{" "}
                       <a
                         href="https://dribbble.com/aaronfischer"
                         target="_blank"
@@ -146,6 +147,7 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="row cf padding-top-25 padding-bottom-25">
+                  {/* TODO: REMOVE CONTENT */}
                   <div className="col-14 pad-col-8 desk-col-8 ci">
                     <h5 className="margin-top-0">Technologies I Use(d):</h5>
                     <ul className="social list-unstyled">
@@ -260,15 +262,17 @@ class App extends Component {
                 img="assets/media/img/summerlake-gator.png"
                 link="https://omnigage.com/"
                 linkName="Visit Site"
-              />
-              <SwiperSlide
+              /> */}
+
+              {/* <SwiperSlide
                 name="Roblox"
-                slide="omnigage"
-                responsibilities="We love our mascot"
+                slide="roblox"
+                responsibilities="We love to build things on roblox"
                 img="https://imgs.search.brave.com/1byETDEMB_kGKw_5SQqK-QyMlO3Lwxy5yCozvWKHy9M/rs:fit:1200:1069:1/g:ce/aHR0cHM6Ly9leHB1/dGVyLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMS8wMS9y/b2Jsb3gtd2FsbHBh/cGVyLmpwZw"
                 link="https://www.roblox.com/"
                 linkName="Visit Site"
               /> */}
+
               <SwiperSlide
                 name="Omnigage"
                 slide="omnigage"
@@ -340,12 +344,6 @@ class App extends Component {
                 img="assets/media/img/work/dome.png"
                 link="http://dome.rmcad.edu"
                 linkName="Visit Site"
-              />
-              <SwiperSlide
-                name="Misc Branding"
-                slide="branding"
-                responsibilities="Design | Branding"
-                img="assets/media/img/work/branding.png"
               />
               <SwiperSlide
                 name="FHFC | Specialist Directory"
